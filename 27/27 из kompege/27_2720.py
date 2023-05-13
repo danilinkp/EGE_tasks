@@ -1,4 +1,4 @@
-f = open('27B_2720.txt')
+f = open('27A_2720.txt')
 n = int(f.readline())
 c = 0
 k_7 = 0
