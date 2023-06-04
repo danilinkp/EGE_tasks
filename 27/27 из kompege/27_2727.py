@@ -1,4 +1,4 @@
-f = open('27A_2727.txt')
+f = open('27B_2727.txt')
 n = int(f.readline())
 c = 0
 m = 10 ** 20
