@@ -4,9 +4,9 @@ with open('26__1kuxo.txt', 'r') as f:
     numbers = f[1:]
     stock = [0] * count
     k = 0
-    was = [-1000000000] *n
-    for time in range(1440): # time -> nums
-        for start in range(n): # start -> nums -> elem
+    was = [-1000000000] * n
+    for time in range(1440):  # time -> nums
+        for start in range(n):  # start -> nums -> elem
             if numbers[start][0] == time:
                 for index in range(count):
                     if stock[index] == 0:
