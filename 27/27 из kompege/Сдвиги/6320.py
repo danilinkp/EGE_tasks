@@ -7,7 +7,7 @@ for i in range(n):
 a = a * 2
 
 s = mx = sum(a[:2 * m + 1])
-for i in range(m + 1, 2 * n - m):
+for i in range(m + 1, n + m):
     s = s - a[i - m - 1] + a[i + m]
     mx = max(mx, s)
 
