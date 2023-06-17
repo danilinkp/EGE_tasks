@@ -17,5 +17,7 @@ for i in range(n):
             ans += 1
             d[cell] = u
             m = cell + 1
+            print(d)
             break
+print(d)
 print(ans, m)

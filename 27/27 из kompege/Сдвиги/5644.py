@@ -1,17 +1,21 @@
-f = open('27A_5644.txt')
-n, m = map(int, f.readline().split())
+f = open('27B_5644.txt')
+n = int(f.readline())
 a = []
+sm = 0
 for i in range(n):
     k = int(f.readline())
+    sm += k
     a.append(k)
 
+s = 0
+for i in range(n):
+    s += i * a[i]
+mx = s
 
+expen = 0
+for i in range(1, n):
+    expen += a[i - 1]
+    s = s + expen - (sm - expen)
+    mx = max(mx, s)
 
-# a = a * 2
-#
-# s = mx = sum(a[:2 * m + 1])
-# for i in range(m + 1, n + m):
-#     s = s - a[i - m - 1] + a[i + m]
-#     mx = max(mx, s)
-#
-# print(mx)
+print(mx)
